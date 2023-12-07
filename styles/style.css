@@ -1,1 +1,24 @@
-/* место для вашего кода */
+@import 'fonts.css';
+@import 'vars.css';
+@import 'reset.css';
+@import 'header.css';
+@import 'address.css';
+@import 'cover.css';
+@import 'lots.css';
+@import 'about.css';
+@import 'footer.css';
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1340px;
+}
+
+
+
+

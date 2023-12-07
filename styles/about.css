@@ -1,0 +1,41 @@
+.about {
+    padding-top: 182px;
+    min-height: 600px;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+}
+
+.about__logo {
+    grid-column: 4 span;
+    background-image: url(../images/about-logo.svg);
+    background-size: 240px 240px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.about__content {
+    padding-top: 100px;
+    grid-column: 8 span;
+}
+
+.about__title {
+margin-bottom: 100px;
+font-size: 40px;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+color: var(--color-black);
+}
+
+.about__descr {
+    margin-bottom: 30px;
+font-size: 20px;
+line-height: normal;
+color: var(--color-black);
+}
+
+
