@@ -1,81 +1,85 @@
 .cover {
-    position: relative;
-    background-image: url(../images/lotus-flower\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 10;
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
 }
 
 .cover__container {
-    padding: 165px 0px 50px 0px;
-    z-index: 100;
-}
-
-.cover__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+  padding: 165px 0px 50px 0px;
+  z-index: 100;
 }
 
 .cover__title {
-margin-bottom: 123px;
-font-size: 100px;
-font-style: normal;
-font-weight: 700;
-line-height: 115%;
-letter-spacing: 20px;
-text-transform: uppercase;
-color: var(--color-white);
-z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 123px;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  z-index: 100;
 }
 
+.accent-span:nth-child(1) {
+  align-self: flex-end;
+  grid-column: 2 span;
+}
 
-.accent-span {
-    display: block;
-    white-space: 20px;
+.accent-span:nth-child(2) {
+  padding-left: 17px;
+  grid-column: 10 span;
+}
+
+.accent-span:nth-child(3) {
+  grid-column: 7 span;
+  justify-self: flex-end;
+  padding-right: 47px;
+}
+
+.accent-span:nth-child(4) {
+  grid-column: 5 span;
+  margin-left: -17px;
+}
+
+.accent-span:nth-child(5) {
+  grid-column: 9 span;
+  justify-self: flex-end;
+  letter-spacing: 8px;
+}
+
+.accent-span:nth-child(6) {
+  padding-left: 53px;
+  grid-column: 3 span;
 }
 
 .accent-span:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-
-.text-left {
-    text-align: left;
+.cover__description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.cover__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-.cover__descr {
-    margin-right: 78px;
-    word-spacing: 17px;
-    font-size: 22px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: var(--color-white);
+.cover__description-text {
+  margin-right: 78px;
+  word-spacing: 18px;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: var(--color-white);
 }
 
 .cover__btn {
-    border: 1px solid var(--color-white);
-    padding: 12px 32px; 
-    font-size: 22px;
-    text-transform: uppercase;
-    color: var(--color-white);
+  border: 1px solid var(--color-white);
+  padding: 12px 32px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--color-white);
 }
