@@ -12,9 +12,15 @@
 }
 
 .cover__title {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-direction: column;
   margin-bottom: 123px;
+  z-index: 100;
+}
+
+.accent-span {
+  display: flex;
+  column-gap: 20px;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -22,39 +28,27 @@
   letter-spacing: 30px;
   text-transform: uppercase;
   color: var(--color-white);
-  z-index: 100;
 }
 
-.accent-span:nth-child(1) {
+.text-center {
+  align-self: center;
+}
+
+.text-left {
+  align-self: flex-start;
+}
+
+.text-right {
   align-self: flex-end;
-  grid-column: 2 span;
+  justify-content: flex-end;
 }
 
-.accent-span:nth-child(2) {
-  padding-left: 17px;
-  grid-column: 10 span;
+.letter-spacing-extended {
+  letter-spacing: 60px;
 }
 
-.accent-span:nth-child(3) {
-  grid-column: 7 span;
-  justify-self: flex-end;
-  padding-right: 47px;
-}
-
-.accent-span:nth-child(4) {
-  grid-column: 5 span;
-  margin-left: -17px;
-}
-
-.accent-span:nth-child(5) {
-  grid-column: 9 span;
-  justify-self: flex-end;
-  letter-spacing: 8px;
-}
-
-.accent-span:nth-child(6) {
-  padding-left: 53px;
-  grid-column: 3 span;
+.no-letter-spacing {
+  letter-spacing: 16px;
 }
 
 .accent-span:not(:last-child) {

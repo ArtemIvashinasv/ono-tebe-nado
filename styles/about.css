@@ -1,5 +1,5 @@
 .about {
-  padding-top: 178px;
+  padding-top: 180px;
 }
 
 .about__container {
@@ -10,13 +10,25 @@
 
 .about__content-logo {
   position: relative;
+  display: flex;
+  justify-content: center;
   grid-column: 4 span;
 }
 
-.about__logo {
+.about__content-logo::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 22%;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  z-index: -1;
+}
+
+.about__logo {
+  max-width: 141px;
+  align-self: flex-start;
+  padding-top: 63px;
 }
 
 .about__content {
@@ -34,7 +46,7 @@
 }
 
 .about__text {
-  margin-bottom: 34px;
+  margin-bottom: 25px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
