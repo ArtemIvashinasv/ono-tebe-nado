@@ -1,14 +1,11 @@
-.menu__list {
+.menu__item {
+  position: relative;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
   color: var(--color-black);
-}
-
-.menu__item {
-  position: relative;
 }
 
 .menu__link_active {

@@ -8,30 +8,29 @@
   column-gap: 30px;
 }
 
-.about__content-logo {
-  position: relative;
+.about__block-left {
   display: flex;
   justify-content: center;
   grid-column: 4 span;
 }
 
-.about__content-logo::before {
-  content: "";
-  position: absolute;
+.about__content-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background-color: var(--color-black);
-  z-index: -1;
 }
 
 .about__logo {
-  max-width: 141px;
-  align-self: flex-start;
-  padding-top: 63px;
+  object-fit: cover;
 }
 
-.about__content {
+.about__block-right {
   padding-top: 100px;
   grid-column: 8 span;
 }
@@ -47,7 +46,7 @@
 
 .about__text {
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

@@ -1,12 +1,8 @@
-.address__link,
-.address__text {
+.address {
+  max-width: 240px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24.3px;
   color: var(--color-black);
-}
-
-.address__text {
-  max-width: 250px;
 }
